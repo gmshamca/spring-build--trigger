@@ -9,7 +9,25 @@ steps:
 #     args: [ 'build', '-t', '${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}', '.' ]
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'build', '-t', 'asia-east1-docker.pkg.dev/sapient-poet-351315/gmshamca/spring-build--trigger/${_IMAGE}', '.' ]
+    args: [ 'build', '-t', 'asia-east1-docker.pkg.dev/sapient-poet-351315/gmshamca/spring-build--trigger/new-buil-29', '.' ]
+    
+  #  # Build the container image
+#   - name: 'gcr.io/cloud-builders/docker'
+#     args: ['build', '-t', 'gcr.io/$PROJECT_ID/build-trigger-auto-cloud:$COMMIT_SHA', '.']
+#  # Push the container image to Container Registry
+#   - name: 'gcr.io/cloud-builders/docker'
+#     args: ['push', 'gcr.io/$PROJECT_ID/build-trigger-auto-cloud:$COMMIT_SHA']
+#  # Deploy container image to Cloud Run
+#   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+#     entrypoint: gcloud#  # Build the container image
+#   - name: 'gcr.io/cloud-builders/docker'
+#     args: ['build', '-t', 'gcr.io/$PROJECT_ID/build-trigger-auto-cloud:$COMMIT_SHA', '.']
+#  # Push the container image to Container Registry
+#   - name: 'gcr.io/cloud-builders/docker'
+#     args: ['push', 'gcr.io/$PROJECT_ID/build-trigger-auto-cloud:$COMMIT_SHA']
+#  # Deploy container image to Cloud Run
+#   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+#     entrypoint: gcloud
 
 
 
