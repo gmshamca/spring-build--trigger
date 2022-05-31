@@ -5,16 +5,10 @@ steps:
   - name: maven:3-jdk-8
     entrypoint: mvn
     args: ['test']
-    args:
-    - 'run'
-    - 'deploy'
-    - 'buil-trigger-auto-cloud'
-    - '--image'
-    - 'gcr.io/$PROJECT_ID/build-trigger-auto-cloud:$COMMIT_SHA'
-    - '--region'
-    - 'asia-east1'
- images:
-    - 'gcr.io/$PROJECT_ID/build-trigger-auto-cloud:$COMMIT_SHA'
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [ 'build', '-t', '${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}', '.' ]
+images:
+  - '${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}'
 
 
     
