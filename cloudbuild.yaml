@@ -6,5 +6,5 @@ steps:
     entrypoint: mvn
     args: ['test']
   - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'build', '-t', 'asis-east1-docker.pkg.dev/sapient-poet-351315/gmshamca/spring-build--trigger/container-for-build-cloud', '.' ]
+    args: [ 'build', '-t', 'asis-east1-docker.pkg.dev/sapient-poet-351315/gmshamca/spring-build--trigger/myproject-0.0.1-SNAPSHOT.jar', '.' ]
    
