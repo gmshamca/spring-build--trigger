@@ -6,5 +6,4 @@ steps:
     entrypoint: mvn
     args: ['test']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'asia-east1-docker.pkg.dev/${PROJECT_ID}/gmshamca/spring-build--trigger/gmsha-image', '.']'
-   
+    args: ['build', '-t', 'asia-east1-docker.pkg.dev/${PROJECT_ID}/gmshamca/spring-build--trigger/gmsha-image', '.'] 
