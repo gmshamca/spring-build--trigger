@@ -6,7 +6,4 @@ steps:
     entrypoint: mvn
     args: ['test']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'asia-east1-docker.pkg.dev/sapient-poet-351315/gmshamca/spring-build--trigger//buildcloud-trriger-29', '.']
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'asia-east1-docker.pkg.dev/sapient-poet-351315/gmshamca/spring-build--trigger//buildcloud-trriger-29']
-images: ['asia-east1-docker.pkg.dev/sapient-poet-351315/gmshamca/spring-build--trigger//buildcloud-trriger-29']
+    args: [ 'build', '-t', 'gcr.io/PROJECT_ID/hugo:0.1', '.'] 
