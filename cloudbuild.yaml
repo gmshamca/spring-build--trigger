@@ -9,7 +9,7 @@ steps:
     - 'run'
     - 'deploy'
     - 'cloudrun-trigger-29'
-    - '--image'
+#     - '--image'
     - 'gcr.io/$PROJECT_ID/cloudrun-trigger-29:$COMMIT_SHA'
     - '--region'
     - 'asia-east1'
