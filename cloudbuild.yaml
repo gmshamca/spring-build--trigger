@@ -6,13 +6,7 @@ steps:
     entrypoint: mvn
     args: ['test']
     args:
-    - 'run'
-    - 'deploy'
-    - 'cloudrun-trigger-29'
-#     - '--image'
-    - 'gcr.io/$PROJECT_ID/cloudrun-trigger-29:$COMMIT_SHA'
-    - '--region'
-    - 'asia-east1'
+    
 images:
     - 'gcr.io/$PROJECT_ID/cloudrun-trigger-29:$COMMIT_SHA'
     
