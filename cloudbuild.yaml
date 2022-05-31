@@ -16,8 +16,7 @@ steps:
 images:
     - 'gcr.io/$PROJECT_ID/cloudrun-trigger-29:$COMMIT_SHA'
     
-#   - name: 'gcr.io/cloud-builders/docker'
-#     args: [ 'build', '-t', '${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}', '.' ]
+
 
 #   - name: 'gcr.io/cloud-builders/docker'
 #     args: [ 'build', '-t', 'asia-east1-docker.pkg.dev/sapient-poet-351315/gmshamca/spring-build--trigger/new-buil-29', '.' ]
